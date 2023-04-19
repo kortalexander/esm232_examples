@@ -24,8 +24,9 @@ diversity = sum((ssp/tt)**2)
 
   # use the the frequency count (ssp) to get the most common species
 mostfreq = names(which.max(ssp))
+rarest = names(which.min(ssp))
 
-return(list(simpson=diversity, mostcommon=mostfreq))
+return(list(simpson=diversity, mostcommon=mostfreq, rarest=rarest))
 }
 
 

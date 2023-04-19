@@ -6,6 +6,8 @@ date: "2023-04-03"
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+
+library(here)
 ```
 #  Implementing Functions in R 
 
@@ -192,7 +194,7 @@ Lists are used to return multiple values from functions
 ```{r}
 
 # get the function
-source("../R/compute_diversity.R")
+source(here("R", "compute_diversity.R"))
 
 # sampling categorical data
 # create possible values
